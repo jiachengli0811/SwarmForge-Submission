@@ -21,12 +21,8 @@ This prints the share of the model's sampled states in each verdict (SAFE, VIOLA
 ## Hardening
 
 ```bash
-python -m swarmforge.harden.run baseline configs_new/boids.yaml --out runs/base     # the original only
 python -m swarmforge.harden.run search   configs_new/boids.yaml --out runs/harden   # the search
-python -m swarmforge.harden.run evaluate configs_new/boids.yaml --out runs/eval --record v1=path/to/v1.json
 ```
-
-Options: `--original` (the record to harden; the config's own by default), `--max-evaluations`, `--workers`, `--seed`, `--scoring`, `--missions`, and `--resume RUN_DIR` (search only).
 
 Each round, the strategy draws a parent and the policy proposes edits. Each variant is screened for validity and property profile, then measured on every model's sampling. A child is kept when it improves on its parent by more than the paired noise bar. A run writes:
 - `candidates/<id>.json`: each record with its lineage.
