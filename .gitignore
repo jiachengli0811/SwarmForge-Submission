@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+runs/
+banks/
+configs_new/*.yaml
+configs_new/*.record.json
+data/missions/*/*.json
+data/harden/

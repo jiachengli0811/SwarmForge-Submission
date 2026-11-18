@@ -1,0 +1,1058 @@
+{
+ "_": {
+  "against": "random",
+  "metric": "share",
+  "min": 0.01,
+  "need": 3,
+  "round": "t2"
+ },
+ "adaptive-swarm": {
+  "controllers": [
+   "cand-0760",
+   "cand-1828",
+   "cand-1830",
+   "original"
+  ],
+  "outcomes": {
+   "block": {
+    "fail": 0.375,
+    "flights": 160
+   },
+   "block_early": {
+    "fail": 0.3688,
+    "flights": 160
+   },
+   "block_herd": {
+    "fail": 0.2812,
+    "flights": 160
+   },
+   "block_late": {
+    "fail": 0.4437,
+    "flights": 160
+   },
+   "chase": {
+    "fail": 0.2625,
+    "flights": 160
+   },
+   "chase_block": {
+    "fail": 0.2625,
+    "flights": 160
+   },
+   "chase_herd": {
+    "fail": 0.275,
+    "flights": 160
+   },
+   "chase_split": {
+    "fail": 0.2875,
+    "flights": 160
+   },
+   "flank": {
+    "fail": 0.2313,
+    "flights": 160
+   },
+   "gate": {
+    "fail": 0.2625,
+    "flights": 160
+   },
+   "gate_wide": {
+    "fail": 0.25,
+    "flights": 160
+   },
+   "headon": {
+    "fail": 0.4062,
+    "flights": 160
+   },
+   "headon_split": {
+    "fail": 0.2812,
+    "flights": 160
+   },
+   "herd": {
+    "fail": 0.2687,
+    "flights": 160
+   },
+   "random": {
+    "fail": 0.275,
+    "flights": 160
+   },
+   "rear_quarter": {
+    "fail": 0.2562,
+    "flights": 160
+   },
+   "shear": {
+    "fail": 0.25,
+    "flights": 160
+   },
+   "slow_block": {
+    "fail": 0.3125,
+    "flights": 160
+   },
+   "split": {
+    "fail": 0.2812,
+    "flights": 160
+   },
+   "split_deep": {
+    "fail": 0.275,
+    "flights": 160
+   }
+  },
+  "reference": {
+   "agent_collision": {
+    "d_coast_gap": 0.8022,
+    "d_gap2": 0.4196,
+    "flock_size": 0.3122,
+    "gap1": 0.2158,
+    "goal_dist": 0.2822,
+    "hz_body_gap": 0.2897,
+    "hz_goal_at_me": 0.4116,
+    "m_body_push": 0.546,
+    "peer_bearing_now": 0.3686,
+    "peer_dist": 0.8886,
+    "probe_b_ws0.03_wb0.3": 0.2148,
+    "probe_d_ws0.3_wb0.3": 0.9011,
+    "probe_d_ws0.3_wb3": 0.7043,
+    "probe_d_ws3_wb0.3": 0.8192,
+    "probe_d_ws3_wb3": 0.8192
+   },
+   "obstacle_collision": {
+    "body_push_size": 0.4016,
+    "brake_excess": 0.2902,
+    "coast_gap": 0.7098,
+    "flock_bearing": 0.514,
+    "flock_near_size": 0.4945,
+    "flock_now_size": 0.3085,
+    "goal_bearing": 0.293,
+    "goal_dist": 0.2787,
+    "m_away_body": 0.793,
+    "m_goal_away1": 0.5292,
+    "m_goal_away1_flock_near": 0.5302,
+    "m_goal_flock_near": 0.3879,
+    "peer_bearing_now": 0.3916,
+    "peer_dist": 0.7218,
+    "stop_speed": 0.7098
+   },
+   "timeout": {
+    "brake_excess": 0.2587,
+    "centroid_dist": 0.2073,
+    "coast_gap1": 0.5859,
+    "goal_bearing": 0.3249,
+    "goal_dist": 0.0649,
+    "order": 0.5,
+    "peer_dist_now": 0.4169,
+    "s_centroid_dist": 0.2228,
+    "s_v_goal": 0.5,
+    "t_body_push_along": 0.4376,
+    "t_coast_over_need": 0.5,
+    "t_flock_along": 0.2223,
+    "t_free_best_over_need": 0.56,
+    "t_mates_v_along": 0.5,
+    "t_v_cross": 0.5
+   }
+  },
+  "tactics": {
+   "block": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   },
+   "block_early": {
+    "timeout": {
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   },
+   "block_herd": {
+    "timeout": {
+     "goal_dist": 1,
+     "t_body_push_along": -1
+    }
+   },
+   "block_late": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   },
+   "chase": {},
+   "chase_block": {},
+   "chase_herd": {},
+   "chase_split": {},
+   "flank": {},
+   "gate": {},
+   "gate_wide": {
+    "timeout": {
+     "t_body_push_along": -1
+    }
+   },
+   "headon": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   },
+   "headon_split": {
+    "timeout": {
+     "coast_gap1": -1,
+     "goal_dist": 1,
+     "t_body_push_along": -1
+    }
+   },
+   "herd": {
+    "timeout": {
+     "coast_gap1": -1
+    }
+   },
+   "rear_quarter": {},
+   "shear": {
+    "timeout": {
+     "coast_gap1": -1,
+     "s_centroid_dist": 1
+    }
+   },
+   "slow_block": {
+    "timeout": {
+     "t_body_push_along": -1
+    }
+   },
+   "split": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   },
+   "split_deep": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   }
+  }
+ },
+ "gradient": {
+  "controllers": [
+   "cand-0513",
+   "cand-0859",
+   "cand-0940",
+   "original"
+  ],
+  "outcomes": {
+   "block": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "block_early": {
+    "fail": 0.35,
+    "flights": 160
+   },
+   "block_herd": {
+    "fail": 0.375,
+    "flights": 160
+   },
+   "block_late": {
+    "fail": 0.3563,
+    "flights": 160
+   },
+   "chase": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "chase_block": {
+    "fail": 0.35,
+    "flights": 160
+   },
+   "chase_herd": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "chase_split": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "flank": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "gate": {
+    "fail": 0.3688,
+    "flights": 160
+   },
+   "gate_wide": {
+    "fail": 0.35,
+    "flights": 160
+   },
+   "headon": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "headon_split": {
+    "fail": 0.3563,
+    "flights": 160
+   },
+   "herd": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "random": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "rear_quarter": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "shear": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "slow_block": {
+    "fail": 0.3562,
+    "flights": 160
+   },
+   "split": {
+    "fail": 0.3625,
+    "flights": 160
+   },
+   "split_deep": {
+    "fail": 0.325,
+    "flights": 160
+   }
+  },
+  "reference": {
+   "agent_collision": {
+    "d_coast_gap": 0.8187,
+    "d_gap2": 0.7572,
+    "flock_size": 0.1142,
+    "gap1": 1.0,
+    "goal_dist": 0.7288,
+    "hz_body_gap": 1.0,
+    "hz_goal_at_me": 0.5468,
+    "m_body_push": 0.6883,
+    "peer_bearing_now": 0.4486,
+    "peer_dist": 0.8821,
+    "probe_b_ws0.03_wb0.3": 0.9995,
+    "probe_d_ws0.3_wb0.3": 0.8631,
+    "probe_d_ws0.3_wb3": 0.8779,
+    "probe_d_ws3_wb0.3": 0.7046,
+    "probe_d_ws3_wb3": 0.7687
+   },
+   "obstacle_collision": {
+    "body_push_size": 0.0999,
+    "brake_excess": 0.2148,
+    "coast_gap": 0.9351,
+    "flock_bearing": 0.5514,
+    "flock_near_size": 0.459,
+    "flock_now_size": 0.1678,
+    "goal_bearing": 0.5964,
+    "goal_dist": 0.9386,
+    "m_away_body": 0.9456,
+    "m_goal_away1": 0.8409,
+    "m_goal_away1_flock_near": 0.8269,
+    "m_goal_flock_near": 0.7567,
+    "peer_bearing_now": 0.5495,
+    "peer_dist": 0.7842,
+    "stop_speed": 0.9351
+   },
+   "timeout": {
+    "brake_excess": 0.6488,
+    "centroid_dist": 0.006,
+    "coast_gap1": 0.281,
+    "goal_bearing": 0.5155,
+    "goal_dist": 0.3232,
+    "order": 0.5,
+    "peer_dist_now": 0.029,
+    "s_centroid_dist": 0.3262,
+    "s_v_goal": 0.5025,
+    "t_body_push_along": 0.5085,
+    "t_coast_over_need": 0.5,
+    "t_flock_along": 0.5754,
+    "t_free_best_over_need": 0.4938,
+    "t_mates_v_along": 0.5015,
+    "t_v_cross": 0.2502
+   }
+  },
+  "tactics": {
+   "block": {
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": -1,
+     "goal_dist": -1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "peer_bearing_now": -1,
+     "peer_dist": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "goal_bearing": -1
+    }
+   },
+   "block_early": {
+    "agent_collision": {
+     "probe_b_ws0.03_wb0.3": -1
+    },
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": -1,
+     "goal_dist": -1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "peer_bearing_now": -1,
+     "peer_dist": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "goal_bearing": -1,
+     "t_free_best_over_need": -1
+    }
+   },
+   "block_herd": {
+    "agent_collision": {
+     "gap1": -1,
+     "hz_body_gap": -1,
+     "probe_b_ws0.03_wb0.3": -1
+    },
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_dist": -1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "peer_dist": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1,
+     "t_free_best_over_need": -1
+    }
+   },
+   "block_late": {
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": -1,
+     "goal_dist": -1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "peer_bearing_now": -1,
+     "peer_dist": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "goal_bearing": -1
+    }
+   },
+   "chase": {
+    "obstacle_collision": {
+     "body_push_size": 1,
+     "brake_excess": 1,
+     "coast_gap": -1,
+     "m_away_body": -1,
+     "m_goal_away1": -1,
+     "m_goal_away1_flock_near": -1,
+     "m_goal_flock_near": -1,
+     "stop_speed": -1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": 1
+    }
+   },
+   "chase_block": {
+    "obstacle_collision": {
+     "goal_bearing": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": 1
+    }
+   },
+   "chase_herd": {
+    "obstacle_collision": {
+     "coast_gap": -1,
+     "m_goal_away1": -1,
+     "m_goal_away1_flock_near": -1,
+     "m_goal_flock_near": -1,
+     "stop_speed": -1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": 1
+    }
+   },
+   "chase_split": {
+    "obstacle_collision": {
+     "goal_bearing": 1,
+     "peer_dist": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": 1
+    }
+   },
+   "flank": {
+    "obstacle_collision": {
+     "body_push_size": 1,
+     "brake_excess": 1,
+     "coast_gap": -1,
+     "m_away_body": -1,
+     "m_goal_away1": -1,
+     "m_goal_away1_flock_near": -1,
+     "m_goal_flock_near": -1,
+     "stop_speed": -1
+    },
+    "timeout": {
+     "brake_excess": -1,
+     "coast_gap1": 1,
+     "goal_bearing": -1
+    }
+   },
+   "gate": {
+    "agent_collision": {
+     "gap1": -1,
+     "hz_body_gap": -1,
+     "probe_b_ws0.03_wb0.3": -1
+    },
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": 1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1
+    }
+   },
+   "gate_wide": {
+    "agent_collision": {
+     "gap1": -1,
+     "hz_body_gap": -1,
+     "probe_b_ws0.03_wb0.3": -1
+    },
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": 1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1
+    }
+   },
+   "headon": {
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_dist": -1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "peer_dist": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "brake_excess": -1,
+     "coast_gap1": 1,
+     "goal_bearing": -1
+    }
+   },
+   "headon_split": {
+    "agent_collision": {
+     "gap1": -1,
+     "hz_body_gap": -1,
+     "probe_b_ws0.03_wb0.3": -1
+    },
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": 1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "peer_dist": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   },
+   "herd": {
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": 1,
+     "goal_dist": -1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1
+    }
+   },
+   "rear_quarter": {
+    "obstacle_collision": {
+     "body_push_size": 1,
+     "brake_excess": 1,
+     "coast_gap": -1,
+     "m_away_body": -1,
+     "m_goal_away1": -1,
+     "m_goal_away1_flock_near": -1,
+     "m_goal_flock_near": -1,
+     "stop_speed": -1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": 1
+    }
+   },
+   "shear": {
+    "obstacle_collision": {
+     "brake_excess": 1,
+     "m_goal_away1": -1,
+     "m_goal_away1_flock_near": -1,
+     "m_goal_flock_near": -1
+    },
+    "timeout": {
+     "brake_excess": -1,
+     "coast_gap1": 1,
+     "goal_bearing": -1
+    }
+   },
+   "slow_block": {
+    "agent_collision": {
+     "gap1": -1,
+     "hz_body_gap": -1,
+     "probe_b_ws0.03_wb0.3": -1
+    },
+    "obstacle_collision": {
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1
+    },
+    "timeout": {
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   },
+   "split": {
+    "agent_collision": {
+     "gap1": -1,
+     "hz_body_gap": -1,
+     "probe_b_ws0.03_wb0.3": -1
+    },
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": 1,
+     "goal_dist": -1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1
+    }
+   },
+   "split_deep": {
+    "agent_collision": {
+     "gap1": -1,
+     "hz_body_gap": -1,
+     "probe_b_ws0.03_wb0.3": -1
+    },
+    "obstacle_collision": {
+     "body_push_size": -1,
+     "brake_excess": -1,
+     "coast_gap": 1,
+     "goal_bearing": 1,
+     "goal_dist": -1,
+     "m_away_body": 1,
+     "m_goal_away1": 1,
+     "m_goal_away1_flock_near": 1,
+     "m_goal_flock_near": 1,
+     "stop_speed": 1
+    },
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "t_body_push_along": -1,
+     "t_free_best_over_need": -1
+    }
+   }
+  }
+ },
+ "vasarhelyi": {
+  "controllers": [
+   "cand-0581",
+   "cand-0720",
+   "cand-1022",
+   "original"
+  ],
+  "outcomes": {
+   "block": {
+    "fail": 0.325,
+    "flights": 160
+   },
+   "block_early": {
+    "fail": 0.3,
+    "flights": 160
+   },
+   "block_herd": {
+    "fail": 0.35,
+    "flights": 160
+   },
+   "block_late": {
+    "fail": 0.3187,
+    "flights": 160
+   },
+   "chase": {
+    "fail": 0.4125,
+    "flights": 160
+   },
+   "chase_block": {
+    "fail": 0.3688,
+    "flights": 160
+   },
+   "chase_herd": {
+    "fail": 0.3688,
+    "flights": 160
+   },
+   "chase_split": {
+    "fail": 0.4187,
+    "flights": 160
+   },
+   "flank": {
+    "fail": 0.375,
+    "flights": 160
+   },
+   "gate": {
+    "fail": 0.35,
+    "flights": 160
+   },
+   "gate_wide": {
+    "fail": 0.3812,
+    "flights": 160
+   },
+   "headon": {
+    "fail": 0.2625,
+    "flights": 160
+   },
+   "headon_split": {
+    "fail": 0.4437,
+    "flights": 160
+   },
+   "herd": {
+    "fail": 0.3625,
+    "flights": 160
+   },
+   "random": {
+    "fail": 0.3812,
+    "flights": 160
+   },
+   "rear_quarter": {
+    "fail": 0.4,
+    "flights": 160
+   },
+   "shear": {
+    "fail": 0.35,
+    "flights": 160
+   },
+   "slow_block": {
+    "fail": 0.3438,
+    "flights": 160
+   },
+   "split": {
+    "fail": 0.3625,
+    "flights": 160
+   },
+   "split_deep": {
+    "fail": 0.3563,
+    "flights": 160
+   }
+  },
+  "reference": {
+   "agent_collision": {
+    "d_coast_gap": 0.9995,
+    "d_gap2": 0.1374,
+    "flock_size": 0.8379,
+    "gap1": 0.1748,
+    "goal_dist": 0.9825,
+    "hz_body_gap": 0.1735,
+    "hz_goal_at_me": 0.3524,
+    "m_body_push": 0.5005,
+    "peer_bearing_now": 0.5057,
+    "peer_dist": 0.9113,
+    "probe_b_ws0.03_wb0.3": 0.5265,
+    "probe_d_ws0.3_wb0.3": 1.0,
+    "probe_d_ws0.3_wb3": 1.0,
+    "probe_d_ws3_wb0.3": 1.0,
+    "probe_d_ws3_wb3": 1.0
+   },
+   "obstacle_collision": {
+    "body_push_size": 0.2844,
+    "brake_excess": 0.0292,
+    "coast_gap": 1.0,
+    "flock_bearing": 0.5457,
+    "flock_near_size": 0.8826,
+    "flock_now_size": 0.9021,
+    "goal_bearing": 0.2954,
+    "goal_dist": 0.9975,
+    "m_away_body": 0.9995,
+    "m_goal_away1": 0.9995,
+    "m_goal_away1_flock_near": 0.9995,
+    "m_goal_flock_near": 0.9995,
+    "peer_bearing_now": 0.1794,
+    "peer_dist": 0.1341,
+    "stop_speed": 0.5295
+   },
+   "timeout": {
+    "brake_excess": 0.9605,
+    "centroid_dist": 0.001,
+    "coast_gap1": 0.2877,
+    "goal_bearing": 0.6673,
+    "goal_dist": 1.0,
+    "order": 0.5,
+    "peer_dist_now": 0.008,
+    "s_centroid_dist": 1.0,
+    "s_v_goal": 1.0,
+    "t_body_push_along": 0.4506,
+    "t_coast_over_need": 1.0,
+    "t_flock_along": 0.9214,
+    "t_free_best_over_need": 1.0,
+    "t_mates_v_along": 0.996,
+    "t_v_cross": 0.7493
+   }
+  },
+  "tactics": {
+   "block": {
+    "timeout": {
+     "brake_excess": 1,
+     "goal_bearing": -1,
+     "s_centroid_dist": -1,
+     "s_v_goal": -1,
+     "t_body_push_along": -1,
+     "t_coast_over_need": -1,
+     "t_flock_along": -1,
+     "t_free_best_over_need": -1,
+     "t_mates_v_along": -1
+    }
+   },
+   "block_early": {
+    "timeout": {
+     "brake_excess": 1,
+     "goal_bearing": -1,
+     "s_v_goal": -1,
+     "t_body_push_along": -1,
+     "t_coast_over_need": -1,
+     "t_free_best_over_need": -1,
+     "t_mates_v_along": -1
+    }
+   },
+   "block_herd": {},
+   "block_late": {
+    "timeout": {
+     "brake_excess": 1,
+     "goal_bearing": -1,
+     "s_centroid_dist": -1,
+     "s_v_goal": -1,
+     "t_body_push_along": -1,
+     "t_coast_over_need": -1,
+     "t_flock_along": -1,
+     "t_free_best_over_need": -1,
+     "t_mates_v_along": -1
+    }
+   },
+   "chase": {
+    "timeout": {
+     "brake_excess": -1,
+     "goal_bearing": 1,
+     "s_v_goal": 1,
+     "t_body_push_along": 1,
+     "t_coast_over_need": 1,
+     "t_free_best_over_need": 1
+    }
+   },
+   "chase_block": {
+    "timeout": {
+     "coast_gap1": -1,
+     "goal_bearing": 1
+    }
+   },
+   "chase_herd": {
+    "timeout": {
+     "goal_bearing": 1,
+     "t_body_push_along": 1
+    }
+   },
+   "chase_split": {
+    "timeout": {
+     "coast_gap1": -1,
+     "goal_bearing": 1,
+     "t_body_push_along": 1
+    }
+   },
+   "flank": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": 1,
+     "goal_bearing": 1,
+     "t_flock_along": 1,
+     "t_free_best_over_need": 1
+    }
+   },
+   "gate": {
+    "timeout": {
+     "goal_bearing": -1,
+     "s_v_goal": -1,
+     "t_coast_over_need": -1,
+     "t_free_best_over_need": -1,
+     "t_mates_v_along": -1
+    }
+   },
+   "gate_wide": {
+    "timeout": {
+     "coast_gap1": -1
+    }
+   },
+   "headon": {
+    "timeout": {
+     "brake_excess": 1,
+     "goal_bearing": -1,
+     "s_v_goal": -1,
+     "t_body_push_along": -1,
+     "t_coast_over_need": -1,
+     "t_flock_along": -1,
+     "t_free_best_over_need": -1
+    }
+   },
+   "headon_split": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "s_v_goal": -1,
+     "t_coast_over_need": -1,
+     "t_free_best_over_need": -1
+    }
+   },
+   "herd": {
+    "timeout": {
+     "brake_excess": 1,
+     "goal_bearing": 1,
+     "t_body_push_along": 1
+    }
+   },
+   "rear_quarter": {
+    "timeout": {
+     "brake_excess": -1,
+     "goal_bearing": 1,
+     "s_v_goal": 1,
+     "t_body_push_along": 1,
+     "t_coast_over_need": 1,
+     "t_free_best_over_need": 1,
+     "t_mates_v_along": 1
+    }
+   },
+   "shear": {
+    "timeout": {
+     "brake_excess": 1,
+     "goal_bearing": 1,
+     "t_flock_along": 1
+    }
+   },
+   "slow_block": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": -1,
+     "goal_dist": -1,
+     "s_centroid_dist": -1,
+     "s_v_goal": -1,
+     "t_body_push_along": -1,
+     "t_coast_over_need": -1,
+     "t_flock_along": -1,
+     "t_free_best_over_need": -1,
+     "t_mates_v_along": -1
+    }
+   },
+   "split": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_dist": -1,
+     "s_centroid_dist": -1,
+     "t_flock_along": -1
+    }
+   },
+   "split_deep": {
+    "timeout": {
+     "brake_excess": 1,
+     "coast_gap1": -1,
+     "goal_bearing": 1,
+     "t_body_push_along": 1
+    }
+   }
+  }
+ }
+}
