@@ -6,7 +6,6 @@ Stages 2 and 3 of the pipeline, plus the record format that stage 1 writes. Ever
 |---|---|
 | `algorithm/` | The record format that extraction (stage 1) writes: algorithm, expressions and serializer. |
 | `solve/` | The weakness models, the window states they are read on, the record's laws (`laws.py`, `dynamics.py`) and the sampling of window states. A model rolls the closed loop H ticks from a state and gives a verdict. |
-| `runtime/` | Flies a record inside each target's own simulator (`targets/`), with obstacles and movers from a mission document. |
 | `mission/` | Mission generation within the family's test range, flight, verdicts and the weakness spaces. Weakness-guided testing is `guided.py`, and `targeted.py` is its command line. |
 | `harden/` | The hardening search: law-tree operators and patterns (`operators/`), screening and validity, property profiles (`properties/`), scoring (`scoring.py`, `space.py`), policy, strategy and session. |
 
